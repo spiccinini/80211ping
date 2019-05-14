@@ -76,9 +76,9 @@ For compiling 80211ping you only need GCC and standard binutils plus libpcap and
 
 80211ping can be built using the OpenWRT toolchain (tested with backfire):
 
-    $ export STAGING_DIR=/path/to/openwrt/backfire/staging_dir
-    $ export PATH=$PATH:STAGING_DIR/toolchain-mips_r2_gcc-4.3.3+cs_uClibc-0.9.30.1/bin
-    $ make CC=mips-openwrt-linux-gcc CFLAGS="-I$STAGING_DIR/target-mips_r2_uClibc-0.9.30.1/usr/include" LFLAGS="-L$STAGING_DIR/target-mips_r2_uClibc-0.9.30.1/usr/lib"
+    $ export STAGING_DIR=/home/san/Downloads/openwrt/staging_dir
+    $ export PATH=$PATH:$STAGING_DIR/toolchain-mips_24kc_gcc-7.3.0_musl/bin/
+    $ make CC=mips-openwrt-linux-gcc CFLAGS="-I$STAGING_DIR/target-mips_24kc_musl/usr/include" LFLAGS="-L$STAGING_DIR/target-mips_24kc_musl/usr/lib"
 
 
 Questions?
